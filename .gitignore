@@ -1,0 +1,10 @@
+# Configuration et variables d'environnement
+.env
+.env.*
+
+# Dossier de configuration Obsidian
+.obsidian/
+.*
+
+# Dossier du projet DANTE
+Dante/
