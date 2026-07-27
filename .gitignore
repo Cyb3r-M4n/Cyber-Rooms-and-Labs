@@ -1,10 +1,11 @@
 # Configuration et variables d'environnement
 .env
 .env.*
+.gitignore*
 
 # Dossier de configuration Obsidian
 .obsidian/
-.*
+.gitignore/
 
 # Dossier du projet DANTE
 Dante/
