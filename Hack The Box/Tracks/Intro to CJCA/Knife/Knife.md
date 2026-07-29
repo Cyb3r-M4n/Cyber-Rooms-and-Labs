@@ -32,17 +32,17 @@ Nmap done: 1 IP address (1 host up) scanned in 81.76 seconds
 
 # Enumeration http
 
-![[Pasted image 20260728213740.png]]
+![](/assets/Pasted image 20260728213740.png)
 
 La version `8.1.0-dev` du php est vuln a un RCE
 
 ## PoC : https://github.com/flast101/php-8.1.0-dev-backdoor-rce
 
-![[Pasted image 20260728214619.png]]
+![](/assets/Pasted image 20260728214619.png)
 
 # User flag : 61072335f3b716fb78dc1a582b00d02c
 
-![[Pasted image 20260728215446.png]]
+![](/assets/Pasted image 20260728215446.png)
 
 ### Payload 
 
@@ -50,5 +50,5 @@ La version `8.1.0-dev` du php est vuln a un RCE
 sudo knife exec -E 'exec "/bin/sh"'
 ```
 
-![[Pasted image 20260728215556.png]]
+![](/assets/Pasted image 20260728215556.png)
 # Root Flag : 551a440a47699da2b04a9e3f79d1e828

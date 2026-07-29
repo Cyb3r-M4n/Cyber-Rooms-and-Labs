@@ -131,7 +131,7 @@ Partage FTP vide
 sudo mount -t nfs 10.129.230.172:/ ./target-NFS/ -o nolock
 ```
 
-![[Pasted image 20260728084826.png]]
+![](/assets/Pasted image 20260728084826.png)
 
 ### Found
 
@@ -163,11 +163,11 @@ http://10.129.230.172
 gobuster dir --url "http://10.129.230.172" -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-![[Pasted image 20260728103020.png]]
+![](/assets/Pasted image 20260728103020.png)
 
 ## Connection a la page admin avec les creds trouvees
 
-![[Pasted image 20260728105230.png]]
+![](/assets/Pasted image 20260728105230.png)
 
 
 Apres quelque recherche sur ce net j'ai pu appercevoir que la version de ce cms est vuln a *CVE-2017-15280*
@@ -179,7 +179,7 @@ github.com/noraj/Umbraco-RCE/
 
 `L'exploit EDB-ID 46153 détaille une exécution de code à distance (RCE) authentifiée dans Umbraco v7.7.4 (CVE-2019-25137), résultant de l'absence de sandboxing dans le moteur de transformation XSLT. Des administrateurs peuvent détourner la fonctionnalité `xsltVisualize.aspx` en injectant des blocs `<msxsl:script>` contenant du code C# malveillant, compilé et exécuté côté serveur par le framework .NET.`
 
-![[Pasted image 20260728115009.png]]
+![](/assets/Pasted image 20260728115009.png)
 ## Reverse Shell
 
 Avec le payload je n'arrivais pas a obtenir un shell j'ai du le personnaliser 
@@ -598,9 +598,9 @@ if __name__ == "__main__":
 main()
 ```
 
-![[Pasted image 20260728135520.png]]
+![](/assets/Pasted image 20260728135520.png)
 
-![[Pasted image 20260728135541.png]]
+![](/assets/Pasted image 20260728135541.png)
 
 
 # User.txt : 65b9a5426958a6ba97e66758b0539e67
@@ -632,7 +632,7 @@ PS C:\windows\system32\inetsrv> dir
 
 GodPotato : https://github.com/BeichenDream/GodPotato/releases?source=post_page-----400b88403a71---------------------------------------
 
-![[Pasted image 20260728135822.png]]
+![](/assets/Pasted image 20260728135822.png)
 
 
 Obtention de shell via penelope pour passer nt authority system
@@ -641,9 +641,9 @@ Obtention de shell via penelope pour passer nt authority system
 penelope
 ```
 
-![[Pasted image 20260728135946.png]]
+![](/assets/Pasted image 20260728135946.png)
 
 
 # Root.txt : aa8b3c8d0168ee075bf22bf1c9e5d32f
 
-![[Pasted image 20260728140313.png]]
+![](/assets/Pasted image 20260728140313.png)

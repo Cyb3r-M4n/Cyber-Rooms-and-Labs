@@ -91,7 +91,7 @@ Nmap done: 1 IP address (1 host up) scanned in 60.68 seconds
 
 ## Enumeration http
 
-![[IMG-20260726121707212.png]]
+![](/assets/IMG-20260726121707212.png)
 
 
 ## User found 
