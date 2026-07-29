@@ -298,14 +298,14 @@ pass : Fri3nds@9099
 
 ### Haris creds hashed find
 
-![](/assets/Pasted image 20260706193417.png)
+![](/assets/Pasted-image-20260706193417.png)
 
 ```js
 haris:$2y$10$WHf1T79sxjsZongUKT2jGeexTkvihBQyCZeoYXmObiNphrsZDr6eC
 ```
 
 ## Hash crack
-![](/assets/Pasted image 20260706193657.png)
+![](/assets/Pasted-image-20260706193657.png)
 
 ```js
 bestfriends
@@ -314,7 +314,7 @@ bestfriends
 
 # User Flag
 
-![](/assets/Pasted image 20260706193831.png)
+![](/assets/Pasted-image-20260706193831.png)
 
 ```js
 bf51e57b117e02d2044ee30f74c021af

