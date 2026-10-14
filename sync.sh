@@ -21,7 +21,7 @@ find assets -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | 
     fi
 done
 
-echo "📁 Déplacement des nouvelles images vers assets/..."
+echo "Déplacement des nouvelles images vers assets/..."
 find . -path ./assets -prune -o -path ./.git -prune -o \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -print | while read -r f; do
     old_filename=$(basename "$f")
     new_filename=$(sanitize "$old_filename")
@@ -30,12 +30,12 @@ find . -path ./assets -prune -o -path ./.git -prune -o \( -iname "*.png" -o -ina
     find . -name "*.md" -exec sed -i "s|!\[\[${old_filename}\]\]|![](/assets/${new_filename})|g" {} +
 done
 
-echo "🔄 Correction syntaxe Obsidian -> GitHub..."
+echo "Correction syntaxe Obsidian -> GitHub..."
 find . -name "*.md" -exec sed -i 's/!\[\[\(.*\)\]\]/![](\1)/g' {} +
 
-echo "📤 Push vers GitHub..."
+echo "Push vers GitHub..."
 git add .
 git commit -m "Sync $(date '+%Y-%m-%d %H:%M')" || echo "ℹ️ Rien à commit."
 git push origin main
 
-echo "✅ Sync terminé !"
+echo "Sync terminé !"
